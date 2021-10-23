@@ -125,3 +125,49 @@ ul.menu a {
     .burger.active .line.line:nth-child(3) {
         top: 0;
     }
+
+    ul.menu {
+        padding-top: 50px;
+        position: absolute;
+        width:60%;
+        left: 0;
+        top: 64px;
+        background-color: rgba(255, 255, 255, 0.94);
+        height: calc(100vh - 64px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        transform: translate(0%);
+        transition: 0.7s;
+    }
+
+    nav div:first-of-type.active{
+        left:0%;
+    }
+
+    ul.active {
+        left:-110%;
+    }
+
+    ul.menu li {
+        width: 40%;
+        height: 60px;
+        line-height: 60px;
+        border-bottom: 1px solid var(--colorhover);
+    }
+
+    ul.menu li:last-child{
+        border-bottom: none;
+    }
+
+    ul.menu li a {
+        font-size: 2.2em;
+        letter-spacing: 2px;
+    }
+
+    ul.menu a::after {
+        display: none;
+    }
+}
