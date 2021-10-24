@@ -61,7 +61,6 @@ ul.menu a {
 }
 
 /* BURGER STYLING */
-
 .burger {
     display: none;
 }
@@ -149,7 +148,6 @@ ul.menu a {
         height: 200vh;
         /* opacity: 0.4; */
         /* background-color: rgba(256,256,256,0.7); */
-        /* transition: 5s; */
     }
 
     nav div:first-of-type.active{
@@ -246,5 +244,105 @@ header p:first-child{
         background-size: cover;
         position: relative;
         overflow-x: hidden;
+    }
+}
+
+/*    ABOUT SECTION     */
+
+.whitewraper{
+    
+    display: flex;
+    justify-content: center; 
+}
+
+#white{
+    padding-top: 61px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about{
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    max-width: 1000px;
+    align-items: center;
+    text-align: justify;
+}
+
+.about h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.about p{
+    line-height: 220%;
+    text-align: justify;
+    font-size: 1.7em;
+}
+
+.aboutbutton{
+    outline: 0;
+    box-shadow: none;
+    border-style: none;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    margin: 30px 0;
+    background-color: rgb(224, 173, 134);
+    transition: .3s;
+  }
+  
+.about button a{
+    display: block;
+    text-decoration: none;
+    padding: 0 30px;
+    line-height: 2.2em;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.aboutbutton:hover{
+    background-color: rgb(194, 142, 103);
+}
+
+.photoabout {
+    height: 450px;
+    width: 90%;
+    background: url(/img/about_image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (orientation: landscape){
+    #white{
+        /* margin: 50px 0; */
+        flex-direction: row;
+        justify-content: center;
+    }
+    .about{
+        width: 50%;
+        padding: 0 5% 0 0;
+    }
+    .photoabout{
+        width: 40%;
+        height: 600px;
+
+    }
+}
+
+@media (min-width: 1000px){
+    #white{
+        flex-direction: row-reverse;
     }
 }
