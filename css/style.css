@@ -319,7 +319,7 @@ header p:first-child{
 .photoabout {
     height: 450px;
     width: 90%;
-    background: url(/img/about_image.jpg);
+    background: url(../img/about_image.jpg);
     background-size: cover;
     background-position: center;
 }
