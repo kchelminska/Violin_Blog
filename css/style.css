@@ -22,7 +22,6 @@ html {
 }
 
 /* NAV STYLING */
-
 nav {
     display: flex;
     justify-content: center;
@@ -54,8 +53,8 @@ ul.menu a {
     color: var(--color1);
     padding: .2em;
     letter-spacing: 1px;
-    font-size: 1.4em;
-    font-weight: 200;
+    font-size: 1.5em;
+    font-weight: 300;
     overflow: hidden;
 }
 
@@ -145,8 +144,6 @@ ul.menu a {
         left:-100%;
         width:100%;
         height: 200vh;
-        /* opacity: 0.4; */
-        /* background-color: rgba(256,256,256,0.7); */
     }
 
     nav div:first-of-type.active{
@@ -229,12 +226,7 @@ header p{
     font-weight: 100;
 }
 
-header p:first-child{
-    bottom: 80px;
-}
-
 @media only screen and (max-width: 700px) and (orientation: portrait) {
-
     header {
         background: url(../img/bg_image_min.jpg) rgba(0, 0, 0, 0) no-repeat;
         background-position: right top;
@@ -244,6 +236,126 @@ header p:first-child{
         overflow-x: hidden;
     }
 }
+
+/* REPERTOIRE SECTION STYLING */
+#repertoire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#repertoire h2{
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.shadowdivs{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.shadowdivs section{
+    width: 280px;
+    margin-bottom: 50px;
+}
+
+.shadowdivs p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.shadowdiv{
+    height: 150px;
+    width: 200px;
+    margin: 0 auto;
+    box-shadow: 0px 2px 15px -3px rgba(85,85,85,0.76);
+    border-radius: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*             ABOUT SECTION             */
 .whitewraper{
