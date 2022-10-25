@@ -373,7 +373,14 @@ header p{
     }
 }
 
-
+/* FOOTER SECTION */
+footer{
+    height: 5vh;
+    background-color: var(--color1);
+    color: var(--colorhover);
+    text-align: center;
+    line-height: 5vh;
+}
 
 
 
