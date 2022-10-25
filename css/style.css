@@ -244,12 +244,13 @@ header p{
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 #repertoire h2{
     font-size: 24px;
     font-weight: 900;
-    margin-top: 100px;
     margin-bottom: 50px;
 }
 
@@ -278,7 +279,35 @@ header p{
     border-radius: 3%;
 }
 
+/* SECTION QUOTE */
+.quote{
+    background-color: #E5E7EB;
+}
 
+.quote div{
+    padding: 150px 50px;
+}
+
+.quote p{
+    font-size: 36px;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--color1);
+}
+
+.quote p:nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+    font-style:normal;
+    text-align: right;
+}
+
+@media only screen and (min-width: 700px){
+    .quote div{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
 
 
 
