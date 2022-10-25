@@ -309,6 +309,69 @@ header p{
     }
 }
 
+/* SECTION CALL TO ACTION*/
+.contactbtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    background-color: var(--color1);
+    color: var(--colorhover);
+    opacity: 0.8;
+}
+
+.contactbtn p:first-of-type{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.contactbtn p:nth-of-type(2){
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.contactbtn button{
+    width: 130px;
+    line-height: 25px;
+    background-color: var(--color1);
+    border-style: solid;
+    border-color: var(--colorhover);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.contactbtn button a{
+    text-decoration: none;
+    color: var(--colorhover);
+}
+
+@media only screen and (min-width: 700px){
+    .contactbtn{
+        flex-direction: row;
+        margin: 100px auto;
+        max-width: 1000px;
+        text-align: left;
+        height: 150px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .contactbtn div{
+        flex-grow: 1;
+    }
+    .contactbtn p:nth-of-type(2){
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .contactbtn{
+         border-radius: 3px;
+    }
+}
 
 
 
