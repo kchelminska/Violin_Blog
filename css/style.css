@@ -19,6 +19,7 @@ html {
 
 .container {
     margin: 0 auto;
+    overflow: hidden;
 }
 
 /* NAV STYLING */
@@ -269,7 +270,7 @@ header p{
     border-radius: 3%;
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 700px){
     #repertoire{
         background: rgba(255,255,255, .9);
     }
@@ -333,7 +334,7 @@ header p{
     margin-bottom: 20px;
 }
 
-.contactbtn button{
+button{
     width: 130px;
     line-height: 25px;
     background-color: var(--color1);
@@ -341,9 +342,10 @@ header p{
     border-color: var(--colorhover);
     border-radius: 3px;
     cursor: pointer;
+    font-family: 'Oswald', sans-serif;
 }
 
-.contactbtn button a{
+button a{
     text-decoration: none;
     color: var(--colorhover);
 }
@@ -454,13 +456,135 @@ header p{
 }
 
 /*           CONTACT PAGE            */
-
-.contact{
-    height: calc(100vh - 5vh);
-    background: url(/img/DSC_0496.jpg);
+#contact{
+    background: url(/img/bg_image2.jpg);
     background-position: top right;
     background-size: cover;
+    min-height: calc(100vh - 5vh);
+    display: flex;
+    align-items: center;
 }
+
+/* .Frontcontact{
+    background-color: rgba(255,255,255, .9);
+} */
+.half{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5%;
+}
+
+form{
+    position: relative;
+}
+
+.contact{
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact h1 {
+    position: relative;
+    line-height: 70px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section .wrap{
+    float: left;
+    width: 48%;
+}
+
+section .wrap:nth-of-type(1){
+    margin: 0 4% 0 0 
+}
+
+section .wrap input{
+    width: 100%;
+}
+
+section .message{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact div form label {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.contact div form input,
+textarea {
+    font-family: 'Oswald', sans-serif;
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid var(--color1);
+    color: var(--color1);
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.contact div form input::placeholder {
+    font-size: 13px ;
+}
+
+.contact button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 30%;
+    border-color: var(--color1);
+    transition: 0.4s;
+}
+
+.contact button:hover{
+    background-color: var(--colorhover);
+    transition: 0.4s;
+    
+}
+.contact button:hover a{
+    color: var(--color1);
+    transition: 0.4s;
+}
+
+.message textarea {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: var(--color1);
+}
+
+.socials a i {
+    font-size: 3.5em;
+    transition: .3s;
+}
+
+
+@media (min-width: 1000px) {
+    .half{
+        width: 50%;
+        min-width: 700px;
+    }
+}
+
+
 
 /*           FOOTER SECTION            */
 footer{
@@ -468,11 +592,11 @@ footer{
     background-color: var(--color1);
     color: var(--colorhover);
     text-align: center;
-    line-height: 5vh;
+    line-height: 5vh
 }
 
 
-@media(min-width: 1000px){
+@media(min-width: 700px){
     body{
         background: url(/img/DSC_0496.jpg);
         background-position: top right;
