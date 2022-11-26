@@ -279,7 +279,7 @@ header p{
 /* SECTION QUOTE */
 .quote{
     /* background-color: #E5E7EB; */
-    background: url(/img/bg_image2.jpg);
+    background: url(../img/bg_image2.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: right top;
@@ -381,6 +381,10 @@ button a{
     min-height: calc(100vh - 5vh);
 }
 
+.shadow{
+    background-color: rgba(255, 255, 255, 0.93);
+}
+
 .text{
     padding: 10% 10%;
 }
@@ -437,7 +441,7 @@ button a{
 
 @media (min-width: 1000px) and (orientation: landscape){
     .about{
-        background: url(/img/DSC_0496.jpg);
+        background: url(../img/DSC_0496.jpg);
         background-position: center;
         background-attachment: fixed;
         background-size: cover;
@@ -448,7 +452,6 @@ button a{
         padding: 0 50px;
         margin: 50px auto 0 auto;
         box-shadow: 0px 0px 10px -5px rgba(110, 110, 110, 0.76);
-        background-color: rgba(255, 255, 255, 0.93);
     }
     .photoabout{
         height: 600px;
@@ -457,7 +460,7 @@ button a{
 
 /*           CONTACT PAGE            */
 #contact{
-    background: url(/img/bg_image2.jpg);
+    background: url(../img/bg_image2.jpg);
     background-position: top right;
     background-size: cover;
     min-height: calc(100vh - 5vh);
@@ -598,7 +601,7 @@ footer{
 
 @media(min-width: 700px){
     body{
-        background: url(/img/DSC_0496.jpg);
+        background: url(../img/DSC_0496.jpg);
         background-position: top right;
         background-attachment: fixed;
         background-size: cover;
